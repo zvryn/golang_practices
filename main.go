@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"api/functions"
+
+	"github.com/google/uuid"
+)
 
 func main() {
-	fmt.Println("Hello Wordl")
+	id :=uuid.New().String()
+	functions.DisplayId(id)
+	
 }
